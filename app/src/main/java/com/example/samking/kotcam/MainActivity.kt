@@ -26,32 +26,16 @@ import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.ValueEventListener
 
-
-
-
-
-
-
-
-
 class MainActivity : AppCompatActivity() {
 
     //Firebase variables
-    //var storage: FirebaseStorage? = null
-    //private val storageRef: StorageReference? = null
-
-
     private var storage = FirebaseStorage.getInstance()
     var storageRef = storage.getReferenceFromUrl("gs://not-hotdog-kotlin.appspot.com")
     // Create a reference to "mountains.jpg"
     var hotdogRef = storageRef.child("maybeHotDog.jpg")
     // Create a reference to 'images/mountains.jpg'
     var hotdogImagesRef = storageRef.child("images/maybeHotDog.jpg")
-    // While the file names are the same, the references point to different files
-    //hotdogRef.getName().equals(hotdogImagesRef.getName())   // true
-    //hotdogRef.getPath().equals(hotdogImagesRef.getPath())   // false
-
-    //private var mDatabase: DatabaseReference? = null
+    //get reference to Firebase DB
     var database = FirebaseDatabase.getInstance()
     val mDatabase = database.getReference("hotdog")
 
@@ -87,7 +71,7 @@ class MainActivity : AppCompatActivity() {
                 answer = value
                 if (answer.equals("hot dog"))
                     toastMessage("You got a hot dog!!!")
-                else if (!answer.equals("Is it a dog???"))
+                else if (!answer.equals("Is it a hot dog???"))
                     toastMessage("NO HOT DOG FOR YOU")
             }
 
@@ -135,7 +119,7 @@ class MainActivity : AppCompatActivity() {
     private fun uploadImage(bitmap: Bitmap) {
 
         //get the byte array data
-        var byteArr= getByteArr(bitmap)
+        var byteArr = getByteArr(bitmap)
 
 
         //upload to firebase
