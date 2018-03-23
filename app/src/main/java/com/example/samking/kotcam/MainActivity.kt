@@ -30,10 +30,10 @@ class MainActivity : AppCompatActivity() {
 
     //Firebase variables
     private var storage = FirebaseStorage.getInstance()
-    var storageRef = storage.getReferenceFromUrl("gs://not-hotdog-kotlin.appspot.com")
-    // Create a reference to "mountains.jpg"
+    var storageRef = storage.getReferenceFromUrl([INSERT YOUR APP HERE] ex:"gs://HOTDOGAPP.appspot.com")
+    // Create a reference to "maybeHotDog.jpg"
     var hotdogRef = storageRef.child("maybeHotDog.jpg")
-    // Create a reference to 'images/mountains.jpg'
+    // Create a reference to 'images/maybeHotDog.jpg'
     var hotdogImagesRef = storageRef.child("images/maybeHotDog.jpg")
     //get reference to Firebase DB
     var database = FirebaseDatabase.getInstance()
