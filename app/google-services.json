@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "921228557026",
+    "firebase_url": "https://not-hotdog-kotlin.firebaseio.com",
+    "project_id": "not-hotdog-kotlin",
+    "storage_bucket": "not-hotdog-kotlin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:921228557026:android:49bad0a0b8c50349",
+        "android_client_info": {
+          "package_name": "com.example.samking.kotcam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "921228557026-kgchekddtcf92vp88op7lnuj761ths4u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.samking.kotcam",
+            "certificate_hash": "88a3397c75e3b0e90900b5ebe315d8ef1c6f7b82"
+          }
+        },
+        {
+          "client_id": "921228557026-2d4f5ienr5925mp4tea2mgc1vfk8di3u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHD8736hl9RaC0lYbe8Q_zZIombqlaTD4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "921228557026-2d4f5ienr5925mp4tea2mgc1vfk8di3u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
